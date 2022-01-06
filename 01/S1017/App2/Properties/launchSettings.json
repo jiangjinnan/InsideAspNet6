@@ -1,0 +1,9 @@
+﻿{
+  "profiles": {
+    "Dapr": {
+      "commandName": "Executable",
+      "executablePath": "dapr",
+      "commandLineArgs": "run --app-id app2 --app-port 9999 -- dotnet App2.dll"
+    }
+  }
+}

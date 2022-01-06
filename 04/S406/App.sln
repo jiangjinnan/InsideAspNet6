@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{5A7B2D67-053A-4182-826A-1D479FE751CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpFileSystem", "HttpFileSystem\HttpFileSystem.csproj", "{095369CE-1E75-4BC4-BDFD-6C99E1F19731}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{9FCB50BD-9E2D-45C8-8D8B-BC84E80A6BF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A7B2D67-053A-4182-826A-1D479FE751CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7B2D67-053A-4182-826A-1D479FE751CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7B2D67-053A-4182-826A-1D479FE751CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7B2D67-053A-4182-826A-1D479FE751CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095369CE-1E75-4BC4-BDFD-6C99E1F19731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095369CE-1E75-4BC4-BDFD-6C99E1F19731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095369CE-1E75-4BC4-BDFD-6C99E1F19731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095369CE-1E75-4BC4-BDFD-6C99E1F19731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FCB50BD-9E2D-45C8-8D8B-BC84E80A6BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FCB50BD-9E2D-45C8-8D8B-BC84E80A6BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FCB50BD-9E2D-45C8-8D8B-BC84E80A6BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FCB50BD-9E2D-45C8-8D8B-BC84E80A6BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60076D7F-D521-47AB-A1E9-71BD5B443D30}
+	EndGlobalSection
+EndGlobal

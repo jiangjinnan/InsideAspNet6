@@ -1,0 +1,10 @@
+﻿@using App
+@inject IGreeter Greeter;
+<html>
+    <head>
+        <title>Greeting</title>
+    </head>
+    <body>
+        <p>@Greeter.Greet((DateTimeOffset)ViewBag.Time)</p>
+    </body>
+</html>
