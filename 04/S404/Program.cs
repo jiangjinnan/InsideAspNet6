@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Primitives;
 using System.Text;
 
@@ -24,4 +24,3 @@ async void Callback()
         }
     }
 }
-DirectoryInfo
