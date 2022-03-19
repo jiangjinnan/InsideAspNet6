@@ -32,4 +32,4 @@ static Task HandleAsync(HttpContext httpContext)
     }
     return Task.CompletedTask;
 }
-
+public class DiagnosticCollector : EventListener { }
