@@ -1,33 +1,10 @@
-﻿using Microsoft.AspNetCore.Server.Kestrel.Core;
-using System.Diagnostics;
-using System.Text;
+using App;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
-var app = WebApplication.Create(args);
-app.Run(HandleAsync);
+var builder = WebApplication.CreateBuilder();
+builder.WebHost.UseKestrel(kestrel => kestrel.ListenLocalhost(5000));
+builder.Services.Replace(ServiceDescriptor.Singleton<IServer, MiniKestrelServer>());
+var app = builder.Build();
+app.Run(context => context.Response.WriteAsync("Hello World!"));
 app.Run();
-
-static Task HandleAsync(HttpContext httpContext)
-{
-    var request = httpContext.Request;
-    var configuration = httpContext.RequestServices.GetRequiredService<IConfiguration>();
-    var builder = new StringBuilder();
-    builder.AppendLine($"Process: {Process.GetCurrentProcess().ProcessName}");
-    builder.AppendLine($"MS-ASPNETCORE-TOKEN: {request.Headers["MS-ASPNETCORE-TOKEN"]}");
-    builder.AppendLine($"PathBase: {request.PathBase}");
-    builder.AppendLine("Environment Variables");
-    foreach (string key in Environment.GetEnvironmentVariables().Keys)
-    {
-        if (key.StartsWith("ASPNETCORE_"))
-        {
-            builder.AppendLine($"\t{key}={Environment.GetEnvironmentVariable(key)}");
-        }
-    }
-    return httpContext.Response.WriteAsync(builder.ToString());
-}
-
-
-
-
-//
-// Summary:
-//     The minimum data rate for incoming connections.

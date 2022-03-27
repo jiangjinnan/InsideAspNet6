@@ -5,8 +5,6 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
-		<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
-
 	</PropertyGroup>
 
 </Project>
